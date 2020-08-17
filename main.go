@@ -31,7 +31,7 @@ func RunPowershellCommand(username string, password string, server string, comma
         var pscommand string
 
         if runtime.GOOS == "windows" {
-                pscommand = "powershell.exe"
+                pscommand = "pwsh.exe"
         } else {
                 pscommand = "pwsh"
         }
